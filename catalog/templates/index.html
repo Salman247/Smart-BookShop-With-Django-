@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<div>
+{% load static %}
+<img src="{% static "images/obs.png" %}" alt="My image" style="width:300px;height:200px;"/>
+</div>
+
+
+<h2>Dynamic content</h2>
+
+<p>The Shop has the following record counts:</p>
+<ul>
+<li><strong>Books:</strong> {{ num_books }}</li>
+
+<li><strong>Authors:</strong> {{ num_authors }}</li>
+</ul>
+
+
+You have visited this page {{ num_visits }} times.
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
